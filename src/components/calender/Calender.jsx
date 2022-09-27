@@ -1,6 +1,11 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./Calender.css";
 
+
+/*
+ * Necs. Args: startMonth
+   Opt. Args: onClickHandler, id
+ */
 function Calender(props){
     const [month, setMonth] = useState(props.startMonth);
 
@@ -40,10 +45,6 @@ function Calender(props){
         );
 
         weeks.push(week);
-
-        if(inMonth === 2){
-            break;
-        }
     }
 
     return(

@@ -4,6 +4,7 @@
     border-color: rgb(128, 128, 128);
     border-width: 2px;
     border-style: solid;
+    font-size: 3vh;
 }
 
 /* Header */
@@ -16,22 +17,21 @@
     justify-content: space-between;
 }
 
-.calender-header-display{
-    font-size: 4vh;
-    margin: 20px;
+.calender-header-display{  
+    margin: 1vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .calender-header-prev-button, .calender-header-next-button{
-    margin: 20px;
-    font-size: 4vh;
+    margin: 1vh;
+    font-size: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1vw;
+    margin-right: 1vw;
     border:  none;
     background-color: white;
     width: 8vh;
@@ -85,7 +85,7 @@
 }
 
 .calender-tile-button{
-    font-size: 4vh;
+    font-size: 3vh;
     border: none;
     background-color: white;
     position: relative;

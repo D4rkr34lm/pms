@@ -1,0 +1,89 @@
+:root{
+    --header-image-height: 15vh;
+}
+
+/* Header */
+#header{
+    margin-top: 3vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+#main-header{
+    font-size: 5vh;
+    font-weight: 200;
+    font-family: Helvetica;
+    text-align: center;
+    margin: 0px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#sub-header{
+    font-size: 4vh;
+    font-weight: 200;
+    font-family: Helvetica;
+    text-align: center;
+    margin: 0px;
+}
+
+#atlas-button{
+    max-height: var(--header-image-height);
+}
+
+#account-button{
+    max-height: var(--header-image-height);
+}
+
+/* Nav */
+#nav{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 4vh;
+}
+
+.nav-link{
+    font-family: Helvetica;
+    font-size: 3vh;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vh;
+}
+
+.nav-icon{
+    height: 5vh;
+    margin-right: 1vw;
+}
+
+/*
+ * main content
+ */
+#main-content{
+    min-height: 80vh;
+    border: 2px solid black;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+}
+
+/*
+ * bottom bar
+ */
+#bottom-bar{
+    background-color: aquamarine;
+    height: 15vh;
+}
