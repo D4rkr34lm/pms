@@ -8,7 +8,7 @@ import HouseholdIcon from "../../icons/household.png";
 
 import "./Layout.css";
 
-function Layout(){
+function Private(){
     
 
     return(
@@ -34,4 +34,4 @@ function Layout(){
     );
 }
 
-export default Layout;
+export default Private;

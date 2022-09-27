@@ -1,0 +1,32 @@
+#main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+}
+
+#login input, label{
+    font-size: 4vh;
+}
+
+#login input{
+    margin-bottom: 3vh;
+}
+
+#login h2{
+    font-size: 5vh;
+}
