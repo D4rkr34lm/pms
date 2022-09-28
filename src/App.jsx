@@ -17,15 +17,29 @@ import "./App.css";
 
 function App(){
     const cookies = new Cookies();
-    
-    const [loggedIn, setLoggedIn] = useState(cookies.get("loggedIn"));
-    
-    if(typeof loggedIn === "undefined"){
-        cookies.set("loggedIn", "false");
-        setLoggedIn("false");
+    const [loggedIn, setLoggedIn] = useState(false);
+
+    const token = cookies.get("token");
+
+    if(typeof token !== "undefined"){
+        const options = {
+            method: 'GET',
+            headers: {
+                "Authorization": token
+            },
+        };
+
+        fetch("/account/data", options)
+            .then(response => {
+                if(response.status === 200){
+                    setLoggedIn(true);
+                }
+            })
     }
 
-    if(loggedIn === "true"){
+    
+
+    if(loggedIn){
         return(
             <BrowserRouter>
                 <Routes>
@@ -46,7 +60,7 @@ function App(){
                 <Routes>
                     <Route path="/" element={<Public/>}>
                     <Route index element={<Landing/>}/>
-                    <Route path="/login" element={<Login/>}/>
+                    <Route path="/login" element={<Login setLoggedIn={setLoggedIn}/>}/>
                     <Route path="*" element={<NoSite/>}/>
                     </Route>
                 </Routes>
